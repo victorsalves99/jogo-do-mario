@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.game-board {
+    width: 100%;
+    height: 60vh;
+    border-bottom: 20px solid green;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb,#e0f6ff);
+    bottom: 0;
+}
+.nuvem {
+    width: 550px;
+    position: absolute;
+    animation: nuvem 30s infinite linear;
+}
+.pipe {
+    position: absolute;
+    width: 80px;
+    bottom: 0;
+    animation: pipe-animation 1.5s infinite linear;
+}
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+.jump {
+    animation: jump  500ms ease-out;
+}
+.conteiner-botao{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(green,white)
+}
+.botao {
+border: 4px solid rgb(7, 255, 7);
+padding: 100px 300px;
+border-radius: 30px;
+font-size: 40px; 
+text-decoration: none;
+color: #fff;
+background-color: green; 
+
+
+}
+
+@keyframes pipe-animation {
+    from{
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    40% {
+        bottom: 180px;
+    }
+    50% {
+        bottom: 180px;
+    }
+    60% {
+        bottom: 180px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+@keyframes nuvem {
+    from{
+        right: -550px;
+    }
+    to {
+        right: 100%;
+    }
+}
