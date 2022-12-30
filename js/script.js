@@ -1,7 +1,6 @@
 const mario = document.querySelector(".mario")
 const pipe = document.querySelector(".pipe")
 const nuvem = document.querySelector(".nuvem")
-const pular =document.querySelector("#jump")
 
 
 
